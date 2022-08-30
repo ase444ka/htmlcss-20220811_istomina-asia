@@ -5,14 +5,12 @@
     border-radius: 8px;
     padding: 0px 32px;
     box-sizing: border-box;
-    position: relative;
 }
 
 .accordion__summary {
     padding: 24px 0;
     color: var(--black);
     list-style: none;
-    position: relative;
     position: relative;
 }
 
@@ -44,13 +42,23 @@
 }
 
 .accordion__arrow {
-    color: var(--grey-3); 
+    color: var(--grey-3);
     position: absolute;
-    top: 32px;
-    right: 32px;
+    top: 33px;
+    right: 1px;
+    width: 18px;
+    height: 10px;
 }
 
 
-.accordion__summary::-webkit-details-marker{display:none;}
-.accordion__summary::-moz-list-bullet{list-style-type:none;}
-.accordion__summary::marker{display:none;} 
+.accordion__summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion__summary::-moz-list-bullet {
+    list-style-type: none;
+}
+
+.accordion__summary::marker {
+    display: none;
+}
