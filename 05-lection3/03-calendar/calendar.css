@@ -1,5 +1,5 @@
 .calendar {
-    padding: 28px 33px;
+    padding: 30px 30px 0;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     background-color: var(--white);
@@ -7,11 +7,6 @@
 
 .calendar__title {
     color: var(--black);
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -30,7 +25,7 @@
     right: 0;
     left: 0;
     display: grid;
-    grid-template: repeat(6, 1fr) / repeat(7, 1fr);
+    grid-template: repeat(7, 1fr) / repeat(7, 1fr);
 }
 
 .calendar__item {
@@ -40,7 +35,7 @@
     font-family: 'Source Sans Pro';
 }
 
-.calendar__item_weekday {
+.calendar__weekday {
     font-family: Inter;
     color: var(--grey-2);
     align-items: flex-start;
@@ -49,6 +44,7 @@
 .calendar__item_state_edge {
     background-color: var(--purple);
     color: var(--white)
+
 }
 
 .calendar__item_state_range {
