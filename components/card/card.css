@@ -2,6 +2,7 @@
     padding: 80px 30px 25px;
     background-color: var(--white);
     border: 1px solid transparent;
+    width: 350px;
     height: 367px;
     border-radius: 8px;
     display: flex;

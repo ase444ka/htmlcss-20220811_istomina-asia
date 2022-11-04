@@ -22,6 +22,7 @@
 @import '../../components/srcset/srcset.css';
 @import '../../components/title/title.css';
 @import '../../components/toggler/toggler.css';
+@import '../../components/tooltip/tooltip.css';
 
 :root {
     --white: #ffffff;
@@ -44,4 +45,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
 }

@@ -9,71 +9,130 @@
 
 <body>
     <header class="header page__header">
-        <h1 class="title header__title title_size_large">Reusable component library</h1>
+        <div class="container">
+            <h1 class="title header__title title_size_large">Reusable component library</h1>
+        </div>
     </header>
     <main class="main page__main">
-        <div class="preview">
-            <div class="preview__item card">
-                <div class="card__content"></div>
-                <h3 class="title card__title title_size_small">Tooltip</h3>
-            </div>
-            <div class="preview__item card">
-                <div class="card__content"></div>
-                <h3 class="title card__title title_size_small">Custom form elements</h3>
-            </div>
-            <div class="preview__item card">
-                <div class="card__content"></div>
-                <h3 class="title card__title title_size_small">Calendar</h3>
-            </div>
-
-            <div class="preview__item card">
-                <div class="card__content"></div>
-                <h3 class="title card__title title_size_small">Modal dialog</h3>
-            </div>
-            <div class="preview__item card">
-                <div class="card__content">
-                    <div class="histogram">
-                        <div class="histogram__info">
-                            <div class="histogram__total">
-                                <div class="histogram__label">Total orders</div>
-                                <div class="histogram__value">50524</div>
-                            </div>
-                            <a href="#" class="histogram__link">View all</a>
-                        </div>
-                        <div class="histogram__view">
-                            <div class="histogram__item" style="height: 80%"></div>
-                            <div class="histogram__item" style="height: 10%"></div>
-                            <div class="histogram__item" style="height: 50%"></div>
-                            <div class="histogram__item" style="height: 90%"></div>
-                            <div class="histogram__item" style="height: 100%"></div>
-                            <div class="histogram__item" style="height: 80%"></div>
-                            <div class="histogram__item" style="height: 10%"></div>
-                            <div class="histogram__item" style="height: 50%"></div>
-                            <div class="histogram__item" style="height: 80%"></div>
-                            <div class="histogram__item" style="height: 50%"></div>
-                            <div class="histogram__item" style="height: 90%"></div>
-                            <div class="histogram__item" style="height: 100%"></div>
-                            <div class="histogram__item" style="height: 80%"></div>
-                            <div class="histogram__item" style="height: 10%"></div>
-                            <div class="histogram__item" style="height: 50%"></div>
-                            <div class="histogram__item" style="height: 50%"></div>
-                            <div class="histogram__item" style="height: 80%"></div>
-                            <div class="histogram__item" style="height: 10%"></div>
-                            <div class="histogram__item" style="height: 50%"></div>
-                            <div class="histogram__item" style="height: 90%"></div>
-                            <div class="histogram__item" style="height: 100%"></div>
-                            <div class="histogram__item" style="height: 80%"></div>
+        <div class="container">
+            <div class="preview">
+                <div class="preview__item card">
+                    <div class="card__content">
+                        <div class="tooltip">
+                            <svg class="tooltip__trigger">
+                                <use href="../../assets/images/sprites.svg#help"></use>
+                            </svg>
+                            <div class="tooltip__helper">Тут должна быть подсказка</div>
                         </div>
                     </div>
+                    <h3 class="title card__title title_size_small">Tooltip</h3>
                 </div>
-                <h3 class="title card__title title_size_small">Histogram</h3>
-            </div>
-            <div class="preview__item card">
-                <div class="card__content"></div>
-                <h3 class="title card__title">Avatar</h3>
-            </div>
+                <div class="preview__item card">
+                    <div class="card__content">
+                        <label for="radio-1" class="radio">
+                            <input type="radio" name="radio" id="radio-1" class="radio__input">
+                            <div class="radio__state">
+                                <div class="radio__control">
+                                    <svg class="radio__icon">
+                                        <use href="../../assets/images/sprites.svg#circle"></use>
+                                    </svg>
+                                </div>
+                                <div class="radio__label">Default-1</div>
+                            </div>
 
-        </div>
+                        </label>
+                        <br>
+                        <br>
+                        <label for="radio-2" class="radio">
+                            <input type="radio" name="radio" id="radio-2" class="radio__input">
+                            <div class="radio__state">
+                                <div class="radio__control">
+                                    <svg class="radio__icon">
+                                        <use href="../../assets/images/sprites.svg#circle"></use>
+                                    </svg>
+                                </div>
+                                <div class="radio__label">Default-2</div>
+                            </div>
+
+                        </label>
+                        <br>
+                        <br>
+                        <label for="radio-3" class="radio">
+                            <input disabled type="radio" name="radio" id="radio-3" class="radio__input">
+                            <div class="radio__state">
+                                <div class="radio__control">
+                                    <svg class="radio__icon">
+                                        <use href="../../assets/images/sprites.svg#circle"></use>
+                                    </svg>
+                                </div>
+                                <div class="radio__label">Disabled</div>
+                            </div>
+
+                        </label>
+                    </div>
+                    <h3 class="title card__title title_size_small">Custom form elements</h3>
+                </div>
+                <div class="preview__item card">
+                    <div class="card__content">
+                        <div class="calendar">
+                            <h3 class="calendar__title title title_size_small">Октябрь 2021</h3>
+                            <div class="calendar__content">
+                                <div class="calendar__grid">
+                                    <div class="calendar__item calendar__item_weekday">пн</div>
+                                    <div class="calendar__item calendar__item_weekday">вт</div>
+                                    <div class="calendar__item calendar__item_weekday">ср</div>
+                                    <div class="calendar__item calendar__item_weekday">чт</div>
+                                    <div class="calendar__item calendar__item_weekday">пт</div>
+                                    <div class="calendar__item calendar__item_weekday">сб</div>
+                                    <div class="calendar__item calendar__item_weekday">вс</div>
+                                    <div class="calendar__item"></div>
+                                    <div class="calendar__item"></div>
+                                    <div class="calendar__item">1</div>
+                                    <div class="calendar__item">2</div>
+                                    <div class="calendar__item">3</div>
+                                    <div class="calendar__item">4</div>
+                                    <div class="calendar__item">5</div>
+                                    <div class="calendar__item">6</div>
+                                    <div class="calendar__item">7</div>
+                                    <div class="calendar__item">8</div>
+                                    <div class="calendar__item">9</div>
+                                    <div class="calendar__item calendar__item_state_edge">10</div>
+                                    <div class="calendar__item calendar__item_state_range">11</div>
+                                    <div class="calendar__item calendar__item_state_range">12</div>
+                                    <div class="calendar__item calendar__item_state_range">13</div>
+                                    <div class="calendar__item calendar__item_state_range">14</div>
+                                    <div class="calendar__item calendar__item_state_range">15</div>
+                                    <div class="calendar__item calendar__item_state_range">16</div>
+                                    <div class="calendar__item calendar__item_state_range">17</div>
+                                    <div class="calendar__item calendar__item_state_edge">18</div>
+                                    <div class="calendar__item">19</div>
+                                    <div class="calendar__item">20</div>
+                                    <div class="calendar__item">21</div>
+                                    <div class="calendar__item">22</div>
+                                    <div class="calendar__item">23</div>
+                                    <div class="calendar__item">24</div>
+                                    <div class="calendar__item">25</div>
+                                    <div class="calendar__item">26</div>
+                                    <div class="calendar__item">27</div>
+                                    <div class="calendar__item">28</div>
+                                    <div class="calendar__item">29</div>
+                                    <div class="calendar__item">30</div>
+                                    <div class="calendar__item">31</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="title card__title title_size_small">Calendar</h3>
+                </div>
+
+                <div class="preview__item card">
+                    <div class="card__content">
+                        <div class="card__content"></div>
+                        <h3 class="title card__title">Avatar</h3>
+                    </div>
+
+                </div>
+            </div>
         </div>
         </div>
 
@@ -93,5 +152,7 @@
 
     </footer>
 </body>
+<script src="/assets/index.js"></script>
+
 
 </html>

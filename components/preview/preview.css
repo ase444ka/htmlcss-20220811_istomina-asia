@@ -1,11 +1,10 @@
 .preview {
-    padding: 30px;
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    padding: 30px 0;
+    gap: 30px;
     justify-content: stretch;
     align-content: flex-start;
-    max-width: 2100px;
 }
 
 .preview__item {
