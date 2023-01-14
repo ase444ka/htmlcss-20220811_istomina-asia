@@ -1,5 +1,5 @@
 .calendar {
-    padding: 28px 33px;
+    padding: 28px 33px 0;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     background-color: var(--white);
@@ -30,20 +30,22 @@
     right: 0;
     left: 0;
     display: grid;
-    grid-template: repeat(6, 1fr) / repeat(7, 1fr);
+    grid-template: repeat(7, 1fr) / repeat(7, 1fr);
+    align-items: center;
+    justify-items: center;
 }
 
 .calendar__item {
-    display: flex;
+/*     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     font-family: 'Source Sans Pro';
 }
 
 .calendar__item_weekday {
     font-family: Inter;
     color: var(--grey-2);
-    align-items: flex-start;
+    align-self: start;
 }
 
 .calendar__item_state_edge {
