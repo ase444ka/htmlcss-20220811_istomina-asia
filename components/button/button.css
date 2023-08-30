@@ -9,6 +9,8 @@
     border-width: 1px;
     border-style: solid;
     border-radius: 8px;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    cursor: pointer;
 }
 
 .button_primary {
@@ -40,4 +42,5 @@
 .button:disabled {
     opacity: 0.5;
     pointer-events: none;
+    cursor: default;
 }
