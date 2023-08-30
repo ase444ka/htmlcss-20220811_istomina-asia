@@ -1,16 +1,12 @@
 .card {
-    padding: 80px 30px 25px;
+    padding: 32px 30px;
     background-color: var(--white);
     border: 1px solid transparent;
     width: 350px;
     height: 367px;
     border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 62px;
     align-items: stretch;
-}
-
-.card__title {   
-    align-self: center;
 }
