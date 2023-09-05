@@ -23,6 +23,7 @@
 @import '../../components/title/title.css';
 @import '../../components/toggler/toggler.css';
 @import '../../components/tooltip/tooltip.css';
+@import '../../components/container/container.css';
 
 :root {
     --white: #ffffff;
